@@ -1,0 +1,50 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./class.jpg");
+    background-size: cover; 
+    background-color: rgb(15, 13, 13);
+}
+
+.home-container {
+    width: 500px;
+    margin: 230px;
+    font-size: xx-large;
+    padding: 20px;
+    margin-left: 290px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:#a57171;
+}
+
+.login-container {
+    width: 500px;
+    margin: 230px;
+    padding: 20px;
+    margin-left: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:#a57171;
+}
+input[type="text"],
+input[type="password"],
+button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #1589cc;
+    border-radius: 5px;
+}
+
+button {
+    width: 90%;
+    background-color: #0095ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c8cad4;
+}

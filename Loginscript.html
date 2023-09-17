@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form id="loginForm" class="home-container" onsubmit="return validateLoginForm()">
+        <h1>Login</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+        <p id="loginError" class="error"></p>
+        <a href="Registration.html">Don't have an account? Register here.</a>
+    </form>
+    <p id="globalError" class="error"></p>
+    <script>
+        function validateLoginForm() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const loginError = document.getElementById("loginError");
+            const globalError = document.getElementById("globalError");
+
+            loginError.textContent = "";
+            globalError.textContent = "";
+
+            if (username.trim() === "" || password.trim() === "") {
+                loginError.textContent = "Both fields are required.";
+                return false; 
+            }
+            
+            if (username === "your_username" && password === "your_password") {
+            
+            document.getElementById("loginForm").style.display = "none";
+      
+            loginSuccess.style.display = "block";
+            return false;
+          }
+
+
+
+            return true; 
+        }
+    </script>
+    
+</body>
+</html>
+
